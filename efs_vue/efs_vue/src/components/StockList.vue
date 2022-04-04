@@ -44,7 +44,7 @@
                 <div class="card" v-for="stock in stocks" v-bind:key="stock">
                     <div class="card-header" :id="'heading' + stock.pk">
                         <button class="btn btn-link collapsed" data-bs-toggle="collapse" :data-bs-target="'#collapse' + stock.pk" aria-expanded="true" :aria-controls="'collapse' + stock.pk">
-                            <h6 style="color: #0275d8; float: left">Customer {{stock.cust_number}} - {{stock.category}} stock</h6>
+                            <h6 style="color: #0275d8; float: left">Customer {{stock.cust_number}} - {{stock.symbol}} stock</h6>
                         </button>
                     </div>
 

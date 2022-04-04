@@ -1,7 +1,7 @@
   /* eslint-disable */
 import axios from 'axios';
 //const API_URL = 'https://akanley.pythonanywhere.com';
-const API_URL = 'https://krish22429036.pythonanywhere.com';
+const API_URL = 'http://kwpython.pythonanywhere.com';
 
 export class APIService {
   constructor() {
@@ -109,7 +109,7 @@ deleteInvestment(investment_Pk){
 
 
 
-  addNewStock(stock){
+addNewStock(stock){
  const url = `${API_URL}/api/stocks/`;
  let jwtToken = localStorage.getItem('token');
  const headers = {Authorization: `jwt ${jwtToken}`};
